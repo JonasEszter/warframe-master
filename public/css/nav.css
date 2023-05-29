@@ -1,0 +1,92 @@
+@keyframes previous {
+    0% {margin-left:0%;}
+    100% {margin-left:100%;}
+}
+@keyframes next {
+    0% {margin-left:-100%;}
+    100% {margin-left:0%;}
+}
+nav {
+    height:45px;
+    background-color:white;
+}
+nav ul {
+    display:flex;
+    /*
+        Középre helyezi az ul tartalmát. 
+    */
+    justify-content: center;
+}
+nav li {
+    height:45px;
+    line-height: 45px;
+    list-style-type:none;
+}
+nav li:hover {
+    border-bottom:2px solid var(--red);
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    padding:15px;
+    font-family: 'Oxanium', cursive;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+header {
+    height:400px;
+    position:relative;
+    overflow:hidden;
+}
+header img {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:100%;
+    z-index:0;
+}
+.header-btn-holder {
+    width:160px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:15px;
+    display:flex;
+    justify-content: space-evenly;
+    z-index:500;
+}
+.dot {
+    width:15px;
+    height:15px;
+    background-color:white;
+    border-radius: 15px;
+    border:1px solid var(--red);
+    cursor:pointer;
+}
+.selected-dot {
+    background-color:var(--red);
+}
+.next {
+    animation-name: next;
+    animation-duration: 3s;
+    margin-left:0%;
+}
+.previous {
+    animation-name: previous;
+    animation-duration: 3s;
+    margin-left:100%;
+}
+.next-z-index {
+    z-index:1!important;
+}
+.previous-z-index {
+    z-index:2!important;
+}
+.selected-menu {
+    border-bottom:2px solid var(--red);
+}

@@ -1,0 +1,19 @@
+.grid-6-l {
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-gap:20px;
+}
+.grid-3-l {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:20px;
+}
+.grid-2-xs {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+}
+.flexbox  {
+    display:flex;
+    flex-wrap: wrap;
+}

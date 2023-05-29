@@ -1,0 +1,162 @@
+.kezdolap {
+    margin: 30px 20px;
+}
+
+.koszonto {
+    background-image: url("../images/kezdolap/1209631.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.koszonto p {
+    color: white;
+    padding: 30px 20px;
+    text-align: justify;
+}
+
+.koszonto h2 {
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.kategoriak, .kategoria {
+    display: flex;
+}
+
+.ismerteto-text {
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    padding: 50px;
+}
+
+.ismerteto-kat {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 30px; 
+    display: inline-block;
+    vertical-align:top;
+}
+
+.kategoriak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.kategoria {
+    height: 400px;
+    width: 100px;
+    margin: 10px 0px;
+    position: relative;
+    cursor: pointer;
+    transition: .2s ease;
+    overflow: hidden;
+    transform: skew(-10deg);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--red);
+}
+
+.kategoria > * {
+    position: absolute;
+    transform: skew(10deg);
+}
+
+.kategoria img {
+    width: 1000px;
+    height: 800px;
+    object-fit: fill;
+    opacity: 0.9;
+}
+
+.kategoria.active {
+    width: 500px;
+}
+
+.kategoria .body {
+    position: absolute;
+    color: white;
+    bottom:0; left:0;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    transform: skew(10deg);
+    padding-left: 40px;
+    display: none;
+}
+
+.kategoria .body h3 {
+    color: white;
+}
+
+.kategoria .body button {
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.kategoria.active .body {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.todo {
+    text-align: center;
+}
+  
+.hirek-card {
+    float: left;
+    width: 350px;
+    margin: 30px;
+    height: 350px;
+    position: relative;
+}
+  
+.hirek-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hirek-card img {
+    width: 350px;
+    height: 175px;
+    display: block;
+}
+
+.hirek-card h3 {
+    width: 100%;
+}
+
+.hirek-container {
+    margin: 50px;
+}
+
+.hirek button {
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,105 @@
+#container-palya {
+    width: 100%;
+    overflow:hidden;
+    margin: 0;
+}
+
+.palyak {
+    height:600px;
+    white-space: nowrap;
+    display: flex;
+}
+
+.palyak .palya {
+    display: flex;
+    filter: grayscale(100%);
+    line-height: 0;
+    vertical-align: top;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    border-top: 4px solid var(--red);
+    border-bottom: 4px solid var(--red);
+    transition: .3s ease;
+}
+
+.palyak .palya:hover {
+    display: flex;
+    filter: grayscale(0%);
+    vertical-align: top;
+    width:150%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.palyak .palya.active {
+    display: flex;
+    filter: grayscale(0%);
+    vertical-align: top;
+    width:190%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.palyak .palya img {
+    object-fit: cover;
+    width: 150%;
+    height: 100%;
+    position: relative;
+    transition: .4s ease;
+}
+
+.palyak .palya img:hover {
+    object-fit: cover;
+    width: 150%;
+    height: 100%;
+    position: relative;
+    transform: scale(1.1);
+}
+
+.palyak .palya.active img {
+    object-fit: cover;
+    width: 150%;
+    height: 100%;
+    position: relative;
+    transform: scale(1.1);
+}
+
+.palyak .palya h2 {
+    position: absolute;
+    color: white;
+    bottom:0; left:0;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    display:none;
+}
+
+.palyak .palya:hover h2 {
+    display: block;
+}
+
+.palyak .palya.active h2 {
+    display: block;
+}
+
+.eidolon-palya {
+    display: none;
+}
+
+.eidolon-palya.active {
+    display: block;
+}
+
+.exploiter-palya {
+    display: none;
+}
+
+.exploiter-palya.active {
+    display: block;
+}
